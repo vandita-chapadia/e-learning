@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>document</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .topnav-right {
+    float: right;
+  }
+
+  
+* {
+  box-sizing: border-box;
+}
+
+
+
+#page-content {
+  flex: 1 0 auto;
+  width: 100%;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+  width: 100%;
+}
+
+
+
+  </style>
+<body>
+
+    <div class="topnav">
+        <a class="active" href="index.html">Logo</a>
+      
+        <a href="/E-learning/display">Enrollment</a>
+        <div class="topnav-right">
+            <a href="#signup" data-toggle="modal" data-target="#signup">Sign Up</a>
+            <a href="#login" data-toggle="modal" data-target="#myModal">Login</a>
+           <form class="form-inline">
+        <input class="form-control mr-sm-2 mt-2" type="text" placeholder="What do you want to learn?">
+        <button class="btn btn-success" type="submit">Search</button>
+      </form>
+    
+  
+  
+    </div>
+</div>
+
+    <div class="container-fluid pt-3">
+        <div class="jumbotron text-center">
+           <h2>Courses</h2>
+         
+        </div>
+        
+      </div>
+
+
+<div class="card-deck pt-3 text-center">
+  <div class="card">
+    <img class="card-img-top" src="img/Pd.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title" data-toggle="modal" data-target="#pic" >Python with Datascience</h5>
+      <p class="card-text">This course will introduce the learner to the basics of the python programming environment, including fundamental python programming techniques such as lambdas, reading and manipulating csv files, and the numpy library.</p>
+      <a href="Reg.html" class="btn btn-dark btn-block">Join</a>
+  
+    </div>
+
+   
+    
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="img/ml.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Mechine Learning Fundamentals</h5>
+      <p class="card-text">Machine learning is the study of computer algorithms that improve automatically through experience. It is seen as a subset of artificial intelligence.</p>
+      <a href="Reg.html" class="btn btn-dark btn-block">Join</a>
+    </div>
+    
+    
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="img/c.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Programming With C </h5>
+      <p class="card-text">C is a general-purpose, procedural computer programming language supporting structured programming, lexical variable scope, and recursion, with a static type system. By design, C provides constructs that map efficiently to typical machine instructions</p>
+      <a href="Reg.html" class="btn btn-dark btn-block">Join</a>
+    </div>
+   
+  </div>
+
+</div>
+
+<div class="card-deck pt-3 text-center">
+  <div class="card">
+    <img class="card-img-top" src="img/aj.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title" data-toggle="modal" data-target="#pic" >Advanced Java</h5>
+      <p class="card-text">Advanced Java is everything that goes beyond Core Java – most importantly the APIs defined in Java Enterprise Edition, includes Servlet programming, Web Services, the Persistence API, etc. It is a Web & Enterprise application development platform which basically follows client & server architecture</p>
+     <a href="Reg.html" class="btn btn-dark btn-block">Join</a>
+    </div>
+
+   
+    
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="img/rjs.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Web Development using React Js</h5>
+      <p class="card-text">React is an open-source JavaScript library for building user interfaces or UI components. It is maintained by Facebook and a community of individual developers and companies. React can be used as a base in the development of single-page or mobile applications.</p>
+      <a href="Reg.html" class="btn btn-dark btn-block">Join</a>
+    </div>
+    
+    
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="img/cn.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Computer Networks Fundamentals</h5>
+      <p class="card-text">A computer network is a group of computers that use a set of common communication protocols over digital interconnections for the purpose of sharing resources located on or provided by the network nodes.</p>
+     <a href="Reg.html" class="btn btn-dark btn-block">Join</a>
+    </div>
+   
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+<footer id="sticky-footer" class="py-4 bg-dark text-white-50 ">
+    <div class="container text-center">
+      <small>Copyright &copy; ABC</small>
+    </div>
+  </footer>
+</body>
+
+
+
+<div class="modal fade" id="myModal" role="dialog">
+<div class="modal-dialog">
+
+<div class="modal-content">
+<div class="modal-header">
+  <h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
+  <button type="button" class="close" data-dismiss="modal">×</button>
+  
+</div>
+<div class="modal-body">
+  <form method="POST" action="./Login">
+    <label for="username"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="name" class="form-control" required>
+    <label for="pwd"><b>Password</b></label>
+    <input type="password" class="form-control" id="pwd" placeholder="Enter password" maxlength="6" name="pswd">
+<br>
+    <button type="submit" class="btn btn-success">Submit</button>
+ <div>
+     <br>
+    
+      </div>
+      <div>
+    
+     
+         </div>
+      
+    
+</form>
+</div>
+<div class="modal-footer">
+  <button type="submit" class="btn btn-danger  btn-block pull-left" data-dismiss="modal">
+    <span class="glyphicon glyphicon-remove"></span> Cancel
+  </button>
+ 
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div class="modal fade" id="signup" role="dialog">
+<div class="modal-dialog">
+
+<div class="modal-content">
+<div class="modal-header">
+<h4><span class="glyphicon glyphicon-lock"></span> Sign Up</h4>
+<button type="button" class="close" data-dismiss="modal">×</button>
+
+</div>
+<div class="modal-body">
+  <form action="./Signup" method="POST">
+    <label for="username"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="name" class="form-control" required>
+    <label for="pwd"><b>Password</b></label>
+    <input type="password" class="form-control" id="pwd" placeholder="Enter password" maxlength="6" name="pswd">
+    <label for="pwd"><b> Confirmed Password</b></label>
+    <input type="password" class="form-control" id="pwd" placeholder="Rewrite password" maxlength="6" name="pswd">
+    <label for="pwd"><b>Email</b></label>
+    <input type="email" class="form-control" id="email" placeholder="Enter Email Id"  name="email">
+<br>
+    <button type="submit" class="btn btn-success">Submit</button>
+ <div>
+     <br>
+    
+      </div>
+      <div>
+    
+     
+         </div>
+      
+    
+</form>
+</div>
+<div class="modal-footer">
+<button type="submit" class="btn btn-danger  btn-block pull-left" data-dismiss="modal">
+  <span class="glyphicon glyphicon-remove"></span> Cancel
+</button>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+<div class="modal fade" id="pic" role="dialog">
+  <div class="modal-dialog" style="width:1250px;">
+  
+  <div class="modal-content">
+  <div class="modal-header">
+    
+    <button type="button" class="close" data-dismiss="modal">×</button>
+    
+  </div>
+  <div class="modal-body">
+   <img src="1.jpg">
+  </div>
+  
+  </div>
+  </div>
+  </div>
+  
+  
+  
+
+
+</body>
+</html>

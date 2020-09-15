@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>document</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .topnav-right {
+    float: right;
+  }
+
+  
+* {
+  box-sizing: border-box;
+}
+
+
+
+#page-content {
+  flex: 1 0 auto;
+  width: 100%;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+  width: 100%;
+}
+
+
+
+  </style>
+<body>
+
+    <div class="topnav">
+        <a class="active" href="index.html">Logo</a>
+      
+          <a href="/E-learning/display">Enrollment</a>
+        <div class="topnav-right">
+            <a href="#signup" data-toggle="modal" data-target="#signup">Sign Up</a>
+            <a href="#login" data-toggle="modal" data-target="#myModal">Login</a>
+           <form class="form-inline">
+        <input class="form-control mr-sm-2 mt-2" type="text" placeholder="What do you want to learn?">
+        <button class="btn btn-success" type="submit">Search</button>
+      </form>
+    
+  
+  
+    </div>
+</div>
+
+    <div class="container-fluid pt-3">
+        <div class="jumbotron text-center">
+           <h2> Course Registration form</h2>
+         
+        </div>
+        
+      </div>
+      <div class="pb-5 mb-5">
+ <form method="POST" action="./Reg">
+    <label for="username"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="name" class="form-control" required><br/><br/>
+  <label for="course"><b>Course :</b></label>
+                        
+                                <select name="course" id="course">
+                                    <option value=""></option>
+                                    <option value="Python with Datascience">Python with Datascience</option>
+                                    <option value="Machine learning Fundamentals">Machine learning Fundamentals</option>
+                                    <option value="Programming with C">Programming with C</option>
+                                     <option value="Advanced Java">Advanced Java</option>
+                                     <option value="Web development using React Js">Web development using React Js</option>
+                                      <option value="Computer Networks Fundaments">Computer Networks Fundaments</option>
+                                </select>
+                                <br/><br/>
+    <button type="submit" class="btn btn-success">Submit</button>
+       <button type="reset" class="btn btn-success">Reset</button>
+
+    
+</form>
+</div>
+
+
+<footer id="sticky-footer" class="py-4 bg-dark text-white-50 ">
+    <div class="container text-center">
+      <small>Copyright &copy; ABC</small>
+    </div>
+  </footer>
+</body>
+
+
+
+
+</body>
+</html>
